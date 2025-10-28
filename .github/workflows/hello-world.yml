@@ -6,4 +6,6 @@ jobs:
     steps:
       - name: Hello-world-step1 checout code repo
         uses: actions/checkout@v4
-      - run: echo "$(cat hello_world.txt)"
+      - run: | 
+          echo "$(cat hello_world.txt)"
+          echo ls
